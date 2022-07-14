@@ -38,7 +38,7 @@ class BasicDataset(Dataset):
                 img_ndarray = img_ndarray[np.newaxis, ...]
             else:
                 img_ndarray = img_ndarray.transpose((2, 0, 1))
-
+        else:
             img_ndarray = img_ndarray / 255
 
         return img_ndarray
